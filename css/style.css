@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-1: #222831;
+    --cor-2: #393E46;
+    --cor-3: #00ADB5;
+    --cor-texto: #EEEEEE;
+}
+
+/* ATRIBUTOS BASICOS */
+
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;    
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+a{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+/* CABEÇALHO */
+
+.cabecalho{
+    background-color: var(--cor-1);
+    color: var(--cor-texto);
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabecalho__nome{
+    display : flex;
+    align-items: center;
+    padding-left: 7%;
+    font-size: 16px;
+}
+
+.cabecalho__navegacao{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 7%;
+    font-size: 16px;
+}
+
+/* INTRODUCAO */
+
+.introducao{
+    background-color: var(--cor-1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 7%;
+}
+
+.introducao__texto{
+    color: var(--cor-texto);
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.introducao__texto__1{
+    color: var(--cor-3);
+    font-size: 52px;
+}
+
+.introducao__texto__2{
+    font-size: 22px;
+}
+
+.introducao__texto__links{
+    color: var(--cor-3);
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.introducao__imagem{
+    border-radius: 50%;
+}
+
+/* SOBRE MIM */
