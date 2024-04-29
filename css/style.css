@@ -7,6 +7,7 @@
     --cor-texto: #EEEEEE;
 }
 
+
 /* ATRIBUTOS BASICOS */
 
 h1{
@@ -23,6 +24,7 @@ a{
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
+
 
 /* CABEÇALHO */
 
@@ -50,6 +52,7 @@ a{
     padding-right: 7%;
     font-size: 16px;
 }
+
 
 /* INTRODUCAO */
 
@@ -91,4 +94,86 @@ a{
     border-radius: 50%;
 }
 
+.link{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+
 /* SOBRE MIM */
+
+.sobre__mim{
+    background-color: var(--cor-2);
+    display: flex;
+    flex-direction: row;
+    padding: 3% 7%;
+}
+
+.sobre__mim__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 368px;
+}
+
+.sobre__mim__titulo{
+    color: var(--cor-3);
+    font-size: 52px;
+    padding-right: 7%;
+}
+
+.sobre__mim__info__1 , .sobre__mim__info__2{
+    color: var(--cor-texto);
+    font-size: 16px;
+    padding-right: 7%;
+}
+
+
+/* SKILLS & HOBBIES*/
+
+.skills, .hobbies{
+    background-color: var(--cor-1);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 4% 7%;
+}
+
+.skills__titulo, .hobbies__titulo{
+    color: var(--cor-3);
+    font-size: 32px;
+    text-align: center;
+}
+
+.skills__quadros, .hobbies__quadros{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills__quadros__quadro, .hobbies__quadros__quadro{
+    width: 176px;
+    height: 176px;
+    background-color: var(--cor-2);
+    display: flex;
+}
+
+.skills__quadros__quadro__conteudo, .hobbies__quadros__quadro__conteudo{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.skills__quadros__quadro__conteudo__texto, .hobbies__quadros__quadro__conteudo__texto{
+    font-weight: 700;
+}
+
+
+/* HOBBIES */
+
