@@ -4,11 +4,25 @@
     --cor-1: #222831;
     --cor-2: #393E46;
     --cor-3: #00ADB5;
+    --cor-4: #526D82;
     --cor-texto: #EEEEEE;
 }
 
 
 /* ATRIBUTOS BASICOS */
+
+body{
+    background-color: #222831;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
 
 h1{
     font-family: "Raleway", sans-serif;
@@ -18,6 +32,17 @@ h1{
 h2{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+}
+
+h3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+label{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 a{
@@ -175,5 +200,199 @@ a{
 }
 
 
-/* HOBBIES */
+/* FORMAÇÃO ACADEMICA */
+
+.formacao{
+    background-color: var(--cor-2);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 4% 7%;
+}
+
+.formacao__titulo{
+    color: var(--cor-3);
+    font-size: 32px;
+    text-align: center;
+}
+
+.formacao__quadros{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.formacao__grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formacao__quadros__quadro{
+    width: 368px;
+    height: 286px;
+    background-color: var(--cor-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao__grid__texto__1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.formacao__grid__texto__2{
+    font-size: 16px;
+}
+
+
+/* PROJETOS */
+
+.projetos{
+    background-color: var(--cor-1);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 4% 7%;
+}
+
+.projetos__titulo{
+    color: var(--cor-3);
+    font-size: 32px;
+    text-align: center;
+}
+
+.projetos__container{
+    padding: 0% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projetos__container__conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.projetos__container__conteudo__textos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projetos__container__conteudo__textos__1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.projetos__container__conteudo__textos__2{
+    font-size: 16px;
+}
+
+.botoes{
+    display: flex;
+    gap: 10px;
+}
+
+.botao1{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--cor-3);
+    padding: 7px 16px;
+    min-height: 51px;
+    min-width: 116px;
+    color: var(--cor-3);
+    background: var(--cor-1);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+    :hover {
+        background: #f6f6f7;
+        outline: 1px solid transparent;
+    }
+}
+
+.botao2{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 51px;
+    min-width: 116px;
+    color: #ffffff;
+    background: var(--cor-3);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    :hover {
+        background: #006e52;
+    }
+}
+
+
+/* CONTATO */
+
+.contato{
+    background-color: var(--cor-2);
+    color: white; 
+    display: flex;
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contato__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato__titulo{
+    color: var(--cor-3);
+    font-size: 32px;
+}
+
+.contato__Texto{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formulario__texto__input{
+    width: 100%;
+    height: 3vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.formulario__texto__textarea{
+    width: 100%;
+    height: 8vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
 
