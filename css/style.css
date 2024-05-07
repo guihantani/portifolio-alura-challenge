@@ -74,8 +74,18 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding-right: 7%;
     font-size: 16px;
+    padding-right: 7%;
+}
+
+.cabecalho__email{
+    display : flex;
+    align-items: center;
+}
+
+.cabecalho__email__2{
+    display : none;
+    align-items: center;
 }
 
 
@@ -185,6 +195,7 @@ a{
     height: 176px;
     background-color: var(--cor-2);
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .skills__quadros__quadro__conteudo, .hobbies__quadros__quadro__conteudo{
@@ -227,7 +238,7 @@ a{
 .formacao__grid{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .formacao__quadros__quadro{
@@ -237,6 +248,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .formacao__grid__texto__1{
@@ -295,6 +307,11 @@ a{
 
 .projetos__container__conteudo__textos__2{
     font-size: 16px;
+}
+
+.projetos__imagem{
+    width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .botoes{
@@ -359,7 +376,7 @@ a{
 .contato__conteudo{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .contato__titulo{
@@ -367,32 +384,269 @@ a{
     font-size: 32px;
 }
 
-.contato__Texto{
+.contato__texto{
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
+}
+
+.formulario__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .formulario__texto__input{
     width: 100%;
-    height: 3vh;
+    height: 3.5vh;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .formulario__texto__textarea{
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.botao__enviar{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 51px;
+    min-width: 116px;
+    color: #ffffff;
+    background: var(--cor-3);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    width: 1%;
+    :hover {
+        background: #006e52;
+    }
+}
+
+.botao__enviar:disabled{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 51px;
+    min-width: 116px;
+    color: #ffffff;
+    background: var(--cor-1);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+    width: 1%;
+    :hover {
+        background: #006e52;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    footer{
+       padding: 4%;
+    }
+
+    .cabecalho__nome{
+        padding-left: 4%;
+    }
+
+    .cabecalho__navegacao{
+        display: none;
+    }
+
+    .cabecalho__email__2{
+        display: flex;
+        padding-right: 4%;
+    }
+
+
+    /* INTRODUÇÃO */
+
+    .introducao{
+        padding-right: 4%;
+    }
+
+    .introducao__texto{
+        padding: 4%;
+        gap: 16px;
+    }
+
+    .introducao__texto__1{
+        font-size: 22px;
+    }
+
+    .introducao__texto__2{
+        font-size: 16px;
+    }
+
+    .introducao__imagem{
+        height: 146px;
+        width: 146px;
+    }
+
+
+    /* SOBRE MIM */
+    .sobre__mim{
+        padding: 3% 4%;
+    }
+
+    .sobre__mim__titulo{
+        font-size: 22px;
+    }
+
+    .sobre__mim__texto{
+        padding: 0;
+    }
+
+    .sobre__mim__info__1 , .sobre__mim__info__2{
+        font-size: 14px;
+        padding-right: 4%;
+    }
+
+
+    /* SKILLS & HOBBIES*/
+
+    .skills__titulo, .hobbies__titulo{
+        font-size: 22px;
+    }
+
+    .skills__quadros__quadro, .hobbies__quadros__quadro{
+        width: 176px;
+        height: 118px;
+    }
+
+    .skills__quadros__quadro__conteudo, .hobbies__quadros__quadro__conteudo{
+        padding: 14px;
+    }
+
+    /* FORMAÇÃO ACADEMICA */
+
+    .formacao__titulo{
+        font-size: 22px;
+    }
+
+    .formacao__quadros__quadro{
+        width: 224px;
+        height: 118px;
+    }
+
+    .formacao__imagem{
+        width: 80px;
+    }
+
+    .formacao__grid__texto__1{
+        font-size: 15px;
+    }
+
+    .formacao__grid__texto__2{
+        font-size: 13px;
+    }
+
+
+    /* PROJETOS */
+
+    .projetos{
+        padding: 4% 4%;
+    }
+
+    .projetos__titulo{
+        font-size: 22px;
+    }
+    
+    .projetos__container{
+        padding: 0%;
+    }
+
+    .projetos__container__conteudo{
+        flex-direction: column;
+    }
+
+    .projetos__imagem{
+        width: 100%;
+    }
+
+    .projetos__container__conteudo__textos{
+        align-self: start;
+    }
+
+    .projetos__container__conteudo__textos__1{
+        font-size: 16px;
+    }
+    
+    .projetos__container__conteudo__textos__2{
+        font-size: 14px;
+    }
+
+    .botao1{
+        min-height: 40px;
+        min-width: 108px;
+    }
+    
+    .botao2{
+        min-height: 40px;
+        min-width: 108px;
+    }
+
+    /* CONTATO */
+    .contato{
+        padding: 4%;
+        align-items: start;
+        gap: 0px;
+    }
+
+    .contato__titulo{
+        font-size: 22px;
+    }
+
+    .contato__texto{
+        font-size: 16px;
+    }
+
+    .contato__imagem{
+        display: none;
+    }
+
+    .contato__conteudo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 481px){
+    .skills__quadros{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills__quadros__quadro, .hobbies__quadros__quadro{
+        width: 156px;
+        height: 118px;
+    }
+}
