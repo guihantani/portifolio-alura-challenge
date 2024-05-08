@@ -3,3 +3,5 @@ Este projeto é referente a um desafio de desenvolver um portifólio base propos
 
 ![plot](./assets/portifolio.png)
 
+## 🔗 Github Pages
+O projeto pode ser acessado através do seguinte link: https://guihantani.github.io/portifolio-alura-challenge/
