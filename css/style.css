@@ -176,6 +176,7 @@ a{
     justify-content: space-between;
     gap: 40px;
     padding: 4% 7%;
+    grid-template-columns: none;
 }
 
 .skills__titulo, .hobbies__titulo{
@@ -482,6 +483,7 @@ a{
     .cabecalho__email__2{
         display: flex;
         padding-right: 4%;
+        font-weight: 400;
     }
 
 
@@ -636,17 +638,93 @@ a{
     }
 }
 
-@media only screen and (max-width: 481px){
-    .skills__quadros{
-        display: grid;
+@media only screen and (max-width: 360px){
+
+    footer{
+        padding: 9% 6%;
+    }
+
+    .cabecalho{
+        height: 7vh;
+    }
+
+    .cabecalho__nome{
+        padding-left: 6%;
+        font-size: 16px;
+    }
+
+    .cabecalho__email__2{
+        padding-right: 6%;
+        font-size: 14px;
+    }
+
+    /* INTRODUÇÃO */
+    .introducao{
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: start;
+        padding: 3% 6% 6% 6%;
+        gap: 16px;
+    }
+
+    .introducao__texto{
+        padding: 0%;
+    }
+
+    .introducao__imagem{
+        height: 98px;
+        width: 98px;
+    }
+
+    /* SOBRE MIM */
+    .sobre__mim{
+        padding: 6%;
+    }
+
+
+    /* SKILLS & HOBBIES*/
+    .skills, .hobbies{
+        justify-content: center;
+        align-items: center;  
+        padding: 6%;
+        gap: 20px;
+    }
+
+    .skills__quadros, .hobbies__quadros{
+        display: inline-grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-content: center;
     }
 
     .skills__quadros__quadro, .hobbies__quadros__quadro{
-        width: 156px;
+        width: 150px;
         height: 118px;
+    }
+
+    /* FORMAÇÃO ACADEMICA */
+    .formacao{
+        padding: 6%;
+        gap: 20px;
+    }
+
+    .formacao__quadros{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .formacao__quadros__quadro{
+        width: 316px;
+    }
+
+    /* PROJETOS */
+    .projetos{
+        padding: 6%;
+        gap: 20px;
+    }
+
+    /* CONTATO */
+    .contato{
+        padding: 6%;
     }
 }
